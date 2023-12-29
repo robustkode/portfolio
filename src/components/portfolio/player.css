@@ -1,0 +1,27 @@
+.wrapper {
+  position: relative;
+  height: 50vh;
+  padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+}
+
+.player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 1000 !important;
+}
+
+.thumbnail__container {
+  position: relative;
+}
+
+.play__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
