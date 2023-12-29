@@ -2,7 +2,6 @@ import React, { useRef, useEffect } from "react";
 
 import lottie from "lottie-web";
 import "./about.css";
-import profile_picture from "../../assets/profile3.png";
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
@@ -57,7 +56,7 @@ const About = () => {
             development but also possesses an appreciation for software quality
             you've landed in the right place.
           </p>
-          <a href="#contact" className="btn btn-primary">
+          <a href="#contact" className="btn <atn-primary">
             Let's Talk
           </a>
         </div>

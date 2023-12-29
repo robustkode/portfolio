@@ -26,7 +26,7 @@ const data = [
       "Users can place orders for pizzas and drinks online, with payments processed through Stripe. Administrators have the ability to create, modify, and remove items, and can also view ordered items within the admin dashboard.",
     techno: "Nextjs | NextAuth | Redux | Tailwind | Mongodb",
     github: "https://github.com/robustkode/pizza-ordering-app",
-    demo: "https://pizza-hub.vercel.app/",
+    demo: "https://pitza-hub.vercel.app/",
     brief:
       "https://drive.google.com/file/d/1ylsAZ6iWdfQP7qSnvg-F_4KnqCeZJgGq/preview",
   },
@@ -77,6 +77,8 @@ const Portfolio = () => {
                               marginRight: "2rem",
                               marginBottom: "1rem",
                             }}
+                            target="_blank"
+                            rel="noopener noreferrer"
                           >
                             Github
                           </a>
@@ -87,6 +89,8 @@ const Portfolio = () => {
                             style={{
                               marginBottom: "1rem",
                             }}
+                            target="_blank"
+                            rel="noopener noreferrer"
                           >
                             Live Demo
                           </a>

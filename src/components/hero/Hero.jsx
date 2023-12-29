@@ -23,7 +23,7 @@ const Hero = () => {
           <h1>Kalid Ahmed</h1>
           <p className="text-light">Front-end Developer</p>
           <div className="cta">
-            <a href="" download className="btn">
+            <a href="" className="btn">
               Download CV
             </a>
             <a href="#contact" className="btn btn-primary">

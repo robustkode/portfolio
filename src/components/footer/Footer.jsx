@@ -24,7 +24,11 @@ const Footer = () => {
       <div className="footer__links">
         <p>Robust Code</p>
         <div className="footer__socials">
-          <a href="https://www.linkedin.com/in/kalid-adefa">
+          <a
+            href="https://www.linkedin.com/in/kalid-adefa"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <BsLinkedin size={30} />
           </a>
           <a href="https://github.com/robustkode">
