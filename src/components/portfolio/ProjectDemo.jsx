@@ -1,4 +1,3 @@
-import ReactPlayer from "react-player";
 import Modal from "react-modal";
 import React, { useEffect } from "react";
 import "./player.css";
@@ -14,10 +13,13 @@ const customStyles = {
     transform: "translate(-50%, -50%)",
     padding: 0,
   },
+  overlay: {
+    background: "rgb(0,0,0,0.7)",
+  },
 };
 Modal.setAppElement("#root");
 
-const ProjectDemo = ({ image, title }) => {
+const ProjectDemo = ({ image, title, brief }) => {
   const [modalIsOpen, setIsOpen] = React.useState(false);
 
   useEffect(() => {
@@ -37,8 +39,6 @@ const ProjectDemo = ({ image, title }) => {
   }
   return (
     <div className="portfolio__item-image">
-      {/* <img src={image} alt={title} /> */}
-      {/* <ReactPlayer url="https://www.youtube.com/watch?v=LXb3EKWsInQ" /> */}
       <div>
         <div className="thumbnail__container" onClick={openModal}>
           <img src={image} alt={title} />
@@ -52,12 +52,7 @@ const ProjectDemo = ({ image, title }) => {
         >
           <div>
             <div className="wrapper">
-              <ReactPlayer
-                className="player"
-                url="https://www.youtube.com/watch?v=LXb3EKWsInQ"
-                playing={true}
-                muted={true}
-              />
+              <iframe src={brief} allow="autoplay" className="player"></iframe>
             </div>
           </div>
         </Modal>

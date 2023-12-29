@@ -16,7 +16,7 @@ const data = [
     github: "https://github.com/robustkode/youtube_clone",
     demo: "https://fir-f80ea.web.app/",
     brief:
-      "https://drive.google.com/file/d/1vg1_65ZHQUxNGRCPvHYaB6peWMQrRmSs/view?usp=sharing",
+      "https://drive.google.com/file/d/1vg1_65ZHQUxNGRCPvHYaB6peWMQrRmSs/preview",
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const data = [
     github: "https://github.com/robustkode/pizza-ordering-app",
     demo: "https://pizza-hub.vercel.app/",
     brief:
-      "https://drive.google.com/file/d/1ylsAZ6iWdfQP7qSnvg-F_4KnqCeZJgGq/view?usp=sharing",
+      "https://drive.google.com/file/d/1ylsAZ6iWdfQP7qSnvg-F_4KnqCeZJgGq/preview",
   },
   {
     id: 3,
@@ -40,13 +40,13 @@ const data = [
     github: "https://github.com/robustkode/echo-social-media-app",
     demo: "https://echo-social-client.vercel.app/",
     brief:
-      "https://drive.google.com/file/d/1wuc6Tpct7A5PJAfXeWjCLrzarRjfNFEr/view?usp=sharing",
+      "https://drive.google.com/file/d/1wuc6Tpct7A5PJAfXeWjCLrzarRjfNFEr/preview",
   },
 ];
 
 const Portfolio = () => {
   return (
-    <section id="portfolio">
+    <section id="projects">
       <h5>My Recent Works</h5>
       <h2>Projects</h2>
       <div className="container portfolio__container">
@@ -54,7 +54,7 @@ const Portfolio = () => {
           ({ id, image, title, description, techno, github, demo, brief }) => {
             return (
               <article key={id} className="portfolio__item">
-                <ProjectDemo image={image} title={title} />
+                <ProjectDemo image={image} title={title} brief={brief} />
                 <div className="portfolio__content">
                   <h3 className="portfolio__title">{title}</h3>
                   <div className="portfolio__description">
